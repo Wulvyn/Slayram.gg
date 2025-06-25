@@ -12,17 +12,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #0b0b0d; /* deep dark bg */
+      background-color: #0b0b0d;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
     }
 
     img {
       width: 576px; /* ~6 inches */
       max-width: 90%;
       height: auto;
+      transition: transform 0.2s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <img src="crest.png" alt="Team Slayram Crest" />
+  <a href="https://slayram.gg/home">
+    <img src="crest.png" alt="Enter Team Slayram" />
+  </a>
 </body>
 </html>
